@@ -2,7 +2,7 @@
 </div>
 </body>
 <body onload="startit()">
-<h3 align="center" valign="center"> Tap the screen when the screen turns red </h3>
+<h3 align="center" style="vertical-align: center"> Tap the screen when the screen turns red </h3>
 <script language="JavaScript">
 <!-- hiding for old browsers
 	// response time test, created by Jasper van Zandbeek
