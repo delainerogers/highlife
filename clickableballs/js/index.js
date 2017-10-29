@@ -1,11 +1,3 @@
-/**
- * Created by Rick on 6/17/2016.
- */
-/**
- * reference material for physics of bouncing and colliding balls:
- * http//:gamedevelopment.tutsplus.com/tutorials/when-worlds-collide-simulating-circle-circle-collisions--gamedev-769
-**/
-
 (function () {
     'use strict';
     var FPS;
@@ -47,6 +39,7 @@
         pairs = [];
         setInterval(main_loop, 1000 / FPS);
         createBalls();
+        startTime=new Date();
     }
 
     function simonPatternGenerator() {
@@ -193,6 +186,10 @@
         setTimeout(function() {
             balls[0].color = '#9c121c';
         }, FLASH_INTERVAL);
+        endTime=new Date();
+        var responseTime=(endTime.getTime()-startTime.getTime());
+        document.body.style.background="white";       
+        alert("Your response time is: " + responseTime + " milliseconds " + "\n" + remark(responseTime));
     }
 
     function flashGreen() {
