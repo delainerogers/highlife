@@ -19,6 +19,22 @@
     var audioElement;
     var startTime=new Date();
     var endTime=new Date();
+    var timerID;
+    var startPressed=false;
+
+function startit()
+{
+    if(startPressed)
+    {
+        alert("Already started. Press stop to stop");
+        return;
+    }
+    else
+    {
+        startPressed=true; 
+        timerID=setTimeout('init()', 1000+6000*randNumber());
+    }
+}
 
     function init() {
         canvas = document.getElementById('canvas');
