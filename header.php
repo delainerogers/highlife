@@ -58,6 +58,7 @@ encodeURIComponent(text));
         <li ><a href="/highlife/personalInfo.php">Profile</a></li>
         <li ><a href="/highlife/dashboard.php">Dashboard</a></li>
         <li ><a href="/highlife/reflextest.php">Reflex Test</a></li>
+        <li ><a href="/highlife/coordinationtest.php">Coordination Test</a></li>
       </ul>
     </div>
   </div>
