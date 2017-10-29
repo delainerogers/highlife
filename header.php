@@ -62,4 +62,3 @@ encodeURIComponent(text));
     </div>
   </div>
 </nav>
-    <div class="col-sm-9">

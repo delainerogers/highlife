@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html >
+
 <head>
-  <meta charset="UTF-8">
-  <title>Clickable Bouncing Balls</title>
-   <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
   
@@ -14,7 +8,7 @@
       body {
     margin: 0;
     padding: 0;
-    background-color: palegoldenrod;
+    background-color: white;
 }
 
 #canvas {
@@ -28,15 +22,11 @@
 }
     </style>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
 </head>
 
-<body>
-  <head>
-    <title>Bubbles</title>
-</head>
-<body>
+
     <canvas id='canvas'></canvas>
 </body>
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
@@ -44,4 +34,3 @@
     <script  src="js/index.js"></script>
 
 </body>
-</html>
