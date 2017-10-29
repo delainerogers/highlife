@@ -193,6 +193,7 @@
         var responseTime=(endTime.getTime()-startTime.getTime());
         document.body.style.background="white";       
         alert("Your response time is: " + responseTime + " milliseconds " + "\n");
+        location.reload();
     }
 
     function flashGreen() {
