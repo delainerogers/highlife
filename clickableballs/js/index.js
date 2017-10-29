@@ -17,8 +17,8 @@
     var simonColorPattern;
     var sounds;
     var audioElement;
-  var startTime=new Date();
-var endTime=new Date();
+    var startTime=new Date();
+    var endTime=new Date();
 
     function init() {
         canvas = document.getElementById('canvas');
@@ -43,6 +43,20 @@ var endTime=new Date();
         createBalls();
         startTime=new Date();
     }
+
+    function startit()
+{
+    if(startPressed)
+    {
+        alert("Already started. Press stop to stop");
+        return;
+    }
+    else
+    {
+        startPressed=true; 
+        timerID=setTimeout('init()', 1000+6000*randNumber());
+    }
+}
 
     function simonPatternGenerator() {
         var randomColor;
