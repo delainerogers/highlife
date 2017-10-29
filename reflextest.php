@@ -114,13 +114,12 @@ function startit()
 }
 // --> 
 </script>
-<p>Test your Response time!</p>
-Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
 
+<body value="start" onload="startit()">
 
 <form name="response">
-<input type="button" value="start" onClick="startit()">
-<input type="button" value="stop" onClick="stopTest()">
+<input value="start" onClick="startit()">
+<input value="stop" onClick="stopTest()">
 </form>
 
 
