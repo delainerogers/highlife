@@ -33,31 +33,40 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Logo</a>
+      <a class="navbar-brand" href="#">HighLife</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Dashboard</a></li>
-        <li><a href="/highlife/page2.php">Age</a></li>
-        <li><a href="#">Gender</a></li>
-        <li><a href="#">Geo</a></li>
+        <li ><a href="/highlife/personalInfo.php">Profile</a></li>
+        <li class="active"><a href="/highlife/dashboard.php">Dashboard</a></li>
       </ul>
     </div>
   </div>
 </nav>
-
-<div class="container-fluid">
-
-    <div class="row content">
-    <div class="col-sm-3 sidenav hidden-xs">
-      <h2>HighLife</h2>
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Dashboard</a></li>
-        <li><a href="#section2">Results</a></li>
-        <li><a href="#section3">Data</a></li>
-      </ul><br>
-    </div>
-    <br>
-
     <div class="col-sm-9">
       
+
+
+
+<h1>Dashboard</h1>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Speedometer HTML5 Canvas</title>
+		<script src="speedometer.js"></script>
+	</head>
+	<body onload='draw(0);'>
+		<canvas id="tutorial" width="440" height="220">
+			Canvas not available.
+		</canvas>
+		<div>
+			<form id="drawTemp">
+				<input type="text" id="txtSpeed" name="txtSpeed" value="240" maxlength="2"/>
+				<input type="button" value="Draw" onclick="drawWithInputValue();">
+			</form>
+		</div>
+	</body>
+</html>
+
+
+<?php include('footer.php'); ?>
