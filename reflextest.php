@@ -2,8 +2,8 @@
 </div>
 </body>
 <body onload="startit()">
-<p> Tap the square when the screen turns red </p>
-<a shape="circle" align="center" color="#000000" height="30px" width="30px"></a>
+<h3> align="center"> Tap the circle when the screen turns red </h3>
+<a shape="circle" align="center" color="#000000" height="30px" width="30px" style="border-color: black;align-content: center"></a>
 <script language="JavaScript">
 <!-- hiding for old browsers
 	// response time test, created by Jasper van Zandbeek
