@@ -31,7 +31,7 @@
         audioElement = document.createElement('audio');
         ctx = canvas.getContext('2d');
         FPS = 120;
-        BALLS_TO_MAKE = 4;
+        BALLS_TO_MAKE = 1;
         RADIUS = 40;
         MIN_SPEED = 10;
         MAX_SPEED = 50;
