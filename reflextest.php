@@ -29,7 +29,7 @@
 <!-- hiding for old browsers
 	// response time test, created by Jasper van Zandbeek
 	// e-mail: jasperz@net-v.com
-window.onclick = stopTest();
+window.onclick = stopTest;
 var startTime=new Date();
 var endTime=new Date();
 var startPressed=false;
