@@ -1,56 +1,56 @@
 <?php include "header.php" ?>
-      
 
 
+<form action="sqlsend.php" method="post">
 
 <h1>Profile</h1>
 	 <p>
           <label>Name:</label>
           <input type = "Your Name"
                  id = "myName"
-                 value = "Your Name Here" />
+                 value = "Your Name Here" name="YourName"/>
    </p>
 
     <p>
-             <label>Gender</label>
-             <select id = "myList">
-                <option value = "1">Male</option>
-               <option value = "2">Female</option>
-               <option value = "3">Other</option>
+             <label>Gender:</label>
+             <select name = "gender">
+               <option value = "0">Male</option>
+               <option value = "1">Female</option>
+               <option value = "0">Other</option>
              </select>
           </p>
    <p>
           <label>Age:</label>
           <input type = "Age"
                  id = "myAge"
-                 value = "Your Age Here" />
+                 value = "Your Age Here" name="age" />
    </p>
   
   <p>
           <label>Height:</label>
           <input type = "Your Height"
                  id = "myHeight"
-                 value = "Your Height Here" />
+                 value = "Your Height Here" name="height" />
    </p>
   <p>
           <label>Weight(lbs):</label>
           <input type = "Your Weight"
-                 id = "myWight"
-                 value = "Your Weight Here" />
+                 id = "myWeight"
+                 value = "Your Weight Here" name="weight"/>
    </p>
   <p>
              <label>Amount of exercise/week</label>
-             <select id = "myList">
-               <option value = "0-1">0-1</option>
-               <option value = "2-3">2-3</option>
-               <option value = "4">4</option>
-               <option value = "5">5</option>
-               <option value = "6">6</option>
-               <option value = "7">7</option>
+             <select name = "exercise">
+               <option value = "0">Little or None</option>
+               <option value = "2">1-2</option>
+               <option value = "4">3-4</option>
+               <option value = "6">5+</option>
              </select>
           </p>
   
-  <button>Submit</button> 
+  <input type="submit" value="save">
+
+</form>
 
 
 

@@ -32,7 +32,7 @@
 
 </head>
 
-<body onload="startit()">
+<body>
   <head>
     <title>Bubbles</title>
 </head>
