@@ -17,7 +17,8 @@
     var simonColorPattern;
     var sounds;
     var audioElement;
-    var startTime;
+  var startTime=new Date();
+var endTime=new Date();
 
     function init() {
         canvas = document.getElementById('canvas');
