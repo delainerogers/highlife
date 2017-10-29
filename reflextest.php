@@ -23,13 +23,13 @@
     }
   </style>
 </head>
-<body onload="startit()" onClick="stopTest()">
+<body onload="startit()">
 
 <script language="JavaScript">
 <!-- hiding for old browsers
 	// response time test, created by Jasper van Zandbeek
 	// e-mail: jasperz@net-v.com
-
+window.onclick = "stopTest()";
 var startTime=new Date();
 var endTime=new Date();
 var startPressed=false;
@@ -109,7 +109,7 @@ function startit()
 	else
 	{
 		startPressed=true; 
-		timerID=setTimeout('startTest()', 6000*randNumber());
+		timerID=setTimeout('startTest()', 1000+6000*randNumber());
 	}
 }
 // --> 
