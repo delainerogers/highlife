@@ -43,7 +43,7 @@ encodeURIComponent(text));
 </head>
 <body>
 
-<nav class="navbar navbar-inverse visible-xs">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
