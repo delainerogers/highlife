@@ -47,7 +47,6 @@ function stopTest()
 	{
 		endTime=new Date();
 		var responseTime=(endTime.getTime()-startTime.getTime());
-
 		document.body.style.background="white";       
 		alert("Your response time is: " + responseTime + " milliseconds " + "\n" + remark(responseTime));
 		startPressed=false;
@@ -62,7 +61,9 @@ function stopTest()
 		else
 		{       
 			clearTimeout(timerID);
-			startPressed=false;             
+			startPressed=false;
+			alert("Wait until red before tapping");
+			location.reload();
 		}               
 	}
 }
