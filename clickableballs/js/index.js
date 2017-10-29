@@ -44,20 +44,6 @@
         startTime=new Date();
     }
 
-    function startit()
-{
-    if(startPressed)
-    {
-        alert("Already started. Press stop to stop");
-        return;
-    }
-    else
-    {
-        startPressed=true; 
-        timerID=setTimeout('init()', 1000+6000*randNumber());
-    }
-}
-
     function simonPatternGenerator() {
         var randomColor;
         var twentyRandomColors = [];
