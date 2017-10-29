@@ -23,7 +23,7 @@
     }
   </style>
 </head>
-<body>
+<body onload="startit()">
 
 <script language="JavaScript">
 <!-- hiding for old browsers
@@ -114,8 +114,6 @@ function startit()
 }
 // --> 
 </script>
-
-<body value="start" onload="startit()">
 
 <form name="response">
 <input onClick="stopTest()">
