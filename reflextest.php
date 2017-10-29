@@ -118,8 +118,7 @@ function startit()
 <body value="start" onload="startit()">
 
 <form name="response">
-<input value="start" onClick="startit()">
-<input value="stop" onClick="stopTest()">
+<input onClick="stopTest()">
 </form>
 
 
