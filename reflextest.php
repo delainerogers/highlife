@@ -25,6 +25,18 @@ function startTest()
 function remark(responseTime)
 {
 	var responseString="";
+	if (responseTime < 0.10)
+		responseString="Well done!";
+	if (responseTime >= 0.10 && responseTime < 0.20)
+		responseString="Nice!";
+	if (responseTime >=0.20 && responseTime < 0.30)
+		responseString="Could be better...";
+	if (responseTime >=0.30 && responseTime < 0.60)
+		responseString="Keep practising!";
+	if (responseTime >=0.60 && responseTime < 1)
+		responseString="Have you been drinking?";
+	if (responseTime >=1)
+		responseString="Did you fall asleep?";
 
 	return responseString;
 }
@@ -35,33 +47,8 @@ function stopTest()
 	{
 		endTime=new Date();
 		var responseTime=(endTime.getTime()-startTime.getTime());
-		
-		<?php
-
-$servername = "127.0.0.1";
-$username = "root";
-$password = "root";
-$dbname = "cooldata";
-$connection = mysqli_connect($servername, $username, $password, $dbname);
-  
-  $resp = $_POST['responseTime'];
-
-
-  $query = "INSERT INTO reflexinit (reflexinit) VALUES ('$resp');";
-
-
-
-  $result=mysqli_query($connection,$query);
-
-  if($result)
-  {
-
-    echo $msg="Success";
-  } else{
-  echo $msg="Fail";
-
-}
-?>
+		document.body.style.background="white";       
+		alert("Your response time is: " + responseTime + " milliseconds " + "\n" + remark(responseTime));
 		startPressed=false;
 		bgChangeStarted=false;
 	}
