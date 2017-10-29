@@ -179,25 +179,8 @@
         }
         return -1;
     }
-    
-{function remark(responseTime)
-{
-    var responseString="";
-    if (responseTime < 0.10)
-        responseString="Well done!";
-    if (responseTime >= 0.10 && responseTime < 0.20)
-        responseString="Nice!";
-    if (responseTime >=0.20 && responseTime < 0.30)
-        responseString="Could be better...";
-    if (responseTime >=0.30 && responseTime < 0.60)
-        responseString="Keep practising!";
-    if (responseTime >=0.60 && responseTime < 1)
-        responseString="Have you been drinking?";
-    if (responseTime >=1)
-        responseString="Did you fall asleep?";
 
-    return responseString;
-}
+
     function flashRed() {
         balls[0].color = '#ff1c2b';
         playSound(0);
@@ -207,7 +190,7 @@
         endTime=new Date();
         var responseTime=(endTime.getTime()-startTime.getTime());
         document.body.style.background="white";       
-        alert("Your response time is: " + responseTime + " milliseconds " + "\n" + remark(responseTime));
+        alert("Your response time is: " + responseTime + " milliseconds " + "\n");
     }
 
     function flashGreen() {
